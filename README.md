@@ -60,3 +60,15 @@ Nov 15 19:43:09 honeypot sshd[1304]: Failed password for invalid user admin from
 
 - Credentials are captured, but there is no fake shell, so you can't see what an attacker would do after logging in.
 - A home connection behind NAT will receive no internet traffic. For real data, run it on a VPS.
+
+## Demo
+
+The honeypot rejecting test logins:
+
+![Honeypot running](docs/honeypot_running.png)
+
+The same log analyzed with ssh-log-analyzer:
+
+![Analyzer output](docs/honeypot_analysis.png)
+
+*Demo data comes from my own test logins on localhost, not real attackers.*
